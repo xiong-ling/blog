@@ -102,14 +102,16 @@ export const Header = () => {
               },
               {
                 href: "/self",
-                title: "About me",
+                title: "About",
               },
             ].map(({ href, title }) => (
               <Link
                 href={href}
                 key={href}
-                className={`transition-colors hover:text-foreground/80 text-foreground/60 ${
-                  pathname === href ? "text-[var(--primary)]" : ""
+                className={`transition-colors hover:text-foreground/80 ${
+                  pathname === href
+                    ? "text-[var(--primary)] !import"
+                    : "text-foreground/60"
                 }`}
               >
                 {title}
