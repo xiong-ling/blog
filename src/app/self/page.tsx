@@ -144,7 +144,7 @@ const Companys = () => {
 }
 
 const Self = () => {
-  const [tab, setTab] = useState("companys");
+  const [tab, setTab] = useState("baseInfo");
 
   const render = useMemo(() => {
     if (tab === "baseInfo") return <BaseInfo />;
